@@ -51,6 +51,8 @@ alert(err.message)
   return (
     <div>
       <div className="signupParentDiv">
+
+
         <img width="200px" height="200px" src={Logo}></img>
         <form onSubmit={handleSubmit} >
           <label htmlFor="fname">Username</label>
@@ -102,13 +104,18 @@ alert(err.message)
           />
           <br />
           <br />
-          <button >Signup</button>
+
+
+        <button style={{padding:10}}  >Signup</button>
         </form>
-        <a onClick={()=>{
+        <a   >  <button onClick={()=>{
 
-history.push('/login')
+      history.push('/login')
 
-}}  >Login</a>
+     }} >Login</button></a>
+
+
+
       </div>
     </div>
   );

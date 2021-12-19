@@ -7,11 +7,8 @@ import { FirebaseContext } from '../../store/Context';
 import {useHistory} from 'react-router-dom'
 
 
-
-
 function Login() {
-
-
+  
   const [email,setEmail]=useState('')
   const [password,setpassword]=useState('')
   const {firebase}=useContext(FirebaseContext)
@@ -42,7 +39,7 @@ function Login() {
         <form onSubmit={handleSubmit}  >
           <label htmlFor="fname">Email</label>
           <br />
-          <input
+          <input style={{padding:5}}
             className="input"
             type="email"
             value={email}
@@ -54,7 +51,7 @@ function Login() {
           <br />
           <label htmlFor="lname">Password</label>
           <br />
-          <input
+          <input style={{padding:5}}
             className="input"
             type="password"
             value={password}
@@ -68,7 +65,7 @@ function Login() {
           <br />
           <button> Login</button>
         </form>
-        <a>Signup</a>
+        <a> <button onClick={()=>{history.push('/signup')}}> Signup </button></a>
       </div>
     </div>
   );

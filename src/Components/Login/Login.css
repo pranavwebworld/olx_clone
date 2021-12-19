@@ -1,12 +1,16 @@
 .loginParentDiv {
-    border: 1px solid black;
-    width: max-content;
-    padding: 10px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 6px;
+  border: 1px solid rgb(171, 171, 171);
+  width: max-content;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 50px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 6px;
+  box-shadow: -0px 1px 10px rgb(162, 160, 160);
   }
   
   .loginParentDiv .input {
